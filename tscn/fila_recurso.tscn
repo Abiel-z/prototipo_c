@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://b7b3ei8dgsb6l"]
+
+[ext_resource type="Script" uid="uid://cnrt615ith6uk" path="res://gd/fila_recurso.gd" id="1_n0o8e"]
+
+[node name="fila_recurso" type="HBoxContainer" unique_id=1666455662]
+offset_right = 424.0
+offset_bottom = 79.0
+script = ExtResource("1_n0o8e")
+
+[node name="TITULO" type="Label" parent="." unique_id=1177325467]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "PRUEBA TEXTO 1"
+
+[node name="----" type="Label" parent="." unique_id=258293765]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="CANTIDAD" type="Label" parent="." unique_id=1068585883]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "00"
+
+[node name="PRODUCCION" type="Label" parent="." unique_id=1136969234]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "00"

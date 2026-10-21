@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://chqtwd7h4yr7r"]
+
+[ext_resource type="Script" uid="uid://bww8ma7otofr" path="res://gd/sistema_reina.gd" id="1_8won2"]
+[ext_resource type="Script" uid="uid://dgyixaexhsi2s" path="res://gd/sistema_desarrollo.gd" id="2_ds012"]
+[ext_resource type="Script" uid="uid://cyigp2onijswe" path="res://gd/sistema_consumo.gd" id="3_sl5x3"]
+[ext_resource type="Script" uid="uid://b4fv1e0d8g2y3" path="res://gd/sistema_recoleccion.gd" id="4_2pij3"]
+[ext_resource type="Script" uid="uid://d15gnyodblf2q" path="res://gd/sistema_traspasos.gd" id="5_2pij3"]
+[ext_resource type="Script" uid="uid://5trsm0ihos3l" path="res://gd/sistema_muertes.gd" id="6_4ilgi"]
+
+[node name="SISTEMAS" type="Control" unique_id=1381378977]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="sistema_reina" type="Control" parent="." unique_id=1419407329]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_8won2")
+
+[node name="sistema_desarrollo" type="Control" parent="." unique_id=1767101789]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ds012")
+
+[node name="sistema_consumo" type="Control" parent="." unique_id=224150144]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_sl5x3")
+
+[node name="sistema_recoleccion" type="Control" parent="." unique_id=1934169618]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_2pij3")
+
+[node name="sistema_traspasos" type="Control" parent="." unique_id=1470782307]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("5_2pij3")
+
+[node name="sistema_muertes" type="Control" parent="." unique_id=525057324]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("6_4ilgi")
+
+[node name="sistema_5" type="Control" parent="." unique_id=1117692230]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

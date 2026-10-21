@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://1d5l7ddwt7o6"]
+
+[ext_resource type="Script" uid="uid://bkdbt4cof4xgd" path="res://gd/slider_tarea.gd" id="1_slkey"]
+
+[node name="slider_tarea" type="VBoxContainer" unique_id=595201072]
+custom_minimum_size = Vector2(200, 30)
+offset_right = 200.0
+offset_bottom = 60.0
+script = ExtResource("1_slkey")
+
+[node name="Cabecera" type="HBoxContainer" parent="." unique_id=1908512882]
+layout_mode = 2
+
+[node name="Titulo" type="Label" parent="Cabecera" unique_id=2142537981]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "TEST"
+
+[node name="ESPACIO" type="Label" parent="Cabecera" unique_id=1550555880]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Actual" type="Label" parent="Cabecera" unique_id=1948875062]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "00"
+
+[node name="Esperado" type="Label" parent="Cabecera" unique_id=299015217]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "00"
+
+[node name="Slider" type="HSlider" parent="." unique_id=851483320]
+layout_mode = 2
+
+[node name="BarraReal" type="ProgressBar" parent="." unique_id=1805299355]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 5

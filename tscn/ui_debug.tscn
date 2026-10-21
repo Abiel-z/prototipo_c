@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cwrxse26vxdka"]
+
+[ext_resource type="Script" uid="uid://dqxs2sx0hcp70" path="res://gd/ui_debug.gd" id="1_uae2u"]
+
+[node name="ui_debug" type="VBoxContainer" unique_id=581506987]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_uae2u")

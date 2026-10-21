@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dfmhuan2croun"]
+
+[ext_resource type="Script" uid="uid://bpxe0lne3fp1g" path="res://tscn/pantalla_principal.gd" id="1_ntd6m"]
+[ext_resource type="Script" uid="uid://cbs3ka0irm213" path="res://gd/ui_inventario.gd" id="2_e7pqb"]
+
+[node name="PANTALLA_PRINCIPAL" type="Control" unique_id=1185426883]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ntd6m")
+
+[node name="UI_INVENTARIO" type="VBoxContainer" parent="." unique_id=593876476]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.33
+anchor_bottom = 1.0
+offset_left = 33.0
+offset_top = 88.0
+offset_right = -40.160004
+offset_bottom = -212.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_e7pqb")
+
+[node name="Label" type="Label" parent="UI_INVENTARIO" unique_id=2053311088]
+layout_mode = 2
+text = "asda"

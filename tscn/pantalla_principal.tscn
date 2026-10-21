@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://dfmhuan2croun"]
+
+[ext_resource type="Script" uid="uid://bpxe0lne3fp1g" path="res://tscn/pantalla_principal.gd" id="1_ntd6m"]
+[ext_resource type="Script" uid="uid://dcmx1qb2skhk5" path="res://gd/ui_colonia.gd" id="2_6ye7t"]
+[ext_resource type="Script" uid="uid://cbs3ka0irm213" path="res://gd/ui_inventario.gd" id="2_e7pqb"]
+[ext_resource type="PackedScene" uid="uid://chqtwd7h4yr7r" path="res://tscn/sistemas.tscn" id="3_e7pqb"]
+[ext_resource type="StyleBox" uid="uid://pk0fg4lrj6cx" path="res://tres/panel_base.tres" id="3_ijm17"]
+[ext_resource type="PackedScene" uid="uid://xokd625bjvc6" path="res://tscn/container_sliders.tscn" id="5_dhirb"]
+[ext_resource type="PackedScene" uid="uid://cwrxse26vxdka" path="res://tscn/ui_debug.tscn" id="6_qi64v"]
+
+[node name="PANTALLA_PRINCIPAL" type="Control" unique_id=1185426883]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ntd6m")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2097052454]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SISTEMAS" parent="." unique_id=1381378977 instance=ExtResource("3_e7pqb")]
+layout_mode = 1
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=403479743]
+position = Vector2(579, 327)
+
+[node name="PANEL_ui_colonia" type="PanelContainer" parent="." unique_id=1609292424]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 40.0
+offset_right = 370.0
+offset_bottom = 297.0
+theme_override_styles/panel = ExtResource("3_ijm17")
+
+[node name="Cabecera" type="Control" parent="PANEL_ui_colonia" unique_id=311933845]
+layout_mode = 2
+
+[node name="UI_COLONIA" type="VBoxContainer" parent="PANEL_ui_colonia/Cabecera" unique_id=593876476]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.01
+anchor_top = 0.01
+anchor_right = 0.99
+anchor_bottom = 0.99
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_6ye7t")
+
+[node name="PANEL_ui_inventario" type="PanelContainer" parent="." unique_id=583895528]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 325.0
+offset_right = 373.0
+offset_bottom = 603.0
+theme_override_styles/panel = ExtResource("3_ijm17")
+
+[node name="Cabecera" type="Control" parent="PANEL_ui_inventario" unique_id=120960904]
+layout_mode = 2
+
+[node name="UI_INVENTARIO" type="VBoxContainer" parent="PANEL_ui_inventario/Cabecera" unique_id=1125767807]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.01
+anchor_top = 0.01
+anchor_right = 0.99
+anchor_bottom = 0.99
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_e7pqb")
+
+[node name="PANEL_ui_sliders" type="PanelContainer" parent="." unique_id=1261852486]
+layout_mode = 0
+offset_left = 430.0
+offset_top = 341.0
+offset_right = 701.0
+offset_bottom = 598.0
+theme_override_styles/panel = ExtResource("3_ijm17")
+
+[node name="Cabecera" type="Control" parent="PANEL_ui_sliders" unique_id=1255343491]
+layout_mode = 2
+
+[node name="Container_sliders" parent="PANEL_ui_sliders/Cabecera" unique_id=1261539458 instance=ExtResource("5_dhirb")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.01
+anchor_top = 0.01
+anchor_right = 0.99
+anchor_bottom = 0.99
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+
+[node name="PANEL_ui_debug" type="PanelContainer" parent="." unique_id=1082285614]
+layout_mode = 0
+offset_left = 752.0
+offset_top = 77.0
+offset_right = 1073.0
+offset_bottom = 590.0
+theme_override_styles/panel = ExtResource("3_ijm17")
+
+[node name="Cabecera" type="Control" parent="PANEL_ui_debug" unique_id=1442706926]
+layout_mode = 2
+
+[node name="ui_debug" parent="PANEL_ui_debug/Cabecera" unique_id=581506987 instance=ExtResource("6_qi64v")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.01
+anchor_top = 0.01
+anchor_right = 0.99
+anchor_bottom = 0.99
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
